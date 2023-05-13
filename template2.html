@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+</head>
+<body>
+    <style>
+        .header{
+            display:flex;
+            background-color:lightgray;
+            padding: 5px;
+            height: 100px;
+            width: auto;
+            align-items:flex-end;
+        }
+        .body{
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+        }
+        .article{
+            background-color: aquamarine;
+            height:500px;
+            width:60%;
+        }
+        .aside{
+            background-color: hotpink;
+            height:500px;
+            width:40%;
+        }
+        .sidenav {
+        height: 100%;
+        width: 10%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: blueviolet;
+        overflow-x: hidden;
+        padding-top: 20px;
+        }
+
+        .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        }
+
+        .footer{
+            display:flex;
+            padding:5px;
+            background-color:red;
+            padding:5px;
+            height:175px;
+            width:auto;
+        }
+    </style>
+
+<!--The body of the Website--> 
+    <header>
+        <div class="header">Header</div>
+    </header>
+
+    <div class="body">
+        <div class="article">Article</div>
+        <div class="aside">Aside</div>
+    </div>
+
+    <div class="sidenav">
+        <a href="#">nav</a>
+      </div>
+
+    <footer>
+        <div class="footer">Footer</div>
+    </footer>
+</body>
+</html>
